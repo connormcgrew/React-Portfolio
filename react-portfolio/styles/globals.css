@@ -6,8 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -18,8 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: "burtons";
-  src: url("../public/Burtons.otf")
+  src: url("../public/Burtons\ \(1\).otf");
 }
