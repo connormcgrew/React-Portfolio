@@ -4,7 +4,7 @@ import { DarkModeContext } from '../contexts/DarkModeContext';
 export default function Home() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={` ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-300 text-black'}`}>
+    <div className={` ${darkMode ? 'bg-neutral-900 text-white' : 'bg-zinc-200 text-black'}`}>
       <main className='px-10'>
         <section className='min-h-screen'>
 

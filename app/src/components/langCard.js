@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkModeContext } from "../contexts/DarkModeContext";
 
 const TechnologiesCard = ({ category }) => {
+  const { darkMode } = useContext(DarkModeContext);
 
   const frontEndTechnologies = ["HTML", "CSS", "JavaScript", "React.js", "Handlebars.js", "Tailwindcss", "Bootstap CSS"];
   const backEndTechnologies = ["Node.js", "Express.js", "RESTful APIs"];
@@ -26,11 +28,11 @@ const TechnologiesCard = ({ category }) => {
   }
 
   return (
-    <div className="flex justify-center">
-      <div style={{width: "400px"}}>
-        <div className="shadow-md rounded-lg p-6 bg-gray-800 text-white py-2 mb-4">
-          <h2 className="text-xl font-semibold mb-2">{category}</h2>
-          <ul className="list-disc pl-6">
+    <div className={`flex justify-center ${darkMode ? "bg-neutral-900 " : "bg-zinc-200 "}`}>
+      <div style={{ width: "400px" }}>
+        <div className={`shadow-md rounded-lg p-6 ${darkMode ? "bg-zinc-200 " : "bg-neutral-900 "} py-2 mb-4`}>
+          <h2 className={`text-xl font-semibold mb-2 ${darkMode ? "text-black" : "text-white"}`}>{category}</h2>
+          <ul className={`list-disc pl-6 ${darkMode ? "text-black" : "text-white"}`}>
             {technologies.map((tech, index) => (
               <li key={index}>{tech}</li>
             ))}

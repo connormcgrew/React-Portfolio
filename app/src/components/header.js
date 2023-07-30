@@ -7,19 +7,19 @@ const Header = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <nav className={`py-10 flex justify-between ${darkMode ? 'bg-gradient-to-r from-white to-black text-white' : 'bg-gradient-to-r from-black to-white'} border-b-2 border-gray-200`}>
+    <nav className={`py-10 flex justify-between ${darkMode ? 'bg-gradient-to-r from-white to-black text-white' : 'bg-gradient-to-r from-black to-white'}`}>
       <NavLink to="/">
-        <h1 className={`text-xl ${darkMode ? 'bg-gray-800 text-white'  : 'bg-gray-300 text-black'}  px-4 py-2 rounded-md ml-8`}>Connor McGrew</h1>
+        <h1 className={`text-xl ${darkMode ? 'bg-neutral-900 text-zinc-200'  : 'bg-zinc-200 text-black'} hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out px-4 py-2 rounded-md ml-8`}>Connor McGrew</h1>
       </NavLink>
-      <ul className='flex items-center'>
+      <ul className='flex items-center mr-8'>
         <li>
           <BsFillMoonStarsFill onClick={toggleDarkMode} className='cursor-pointer text-xl'/>
         </li>
         <li>
-          <NavLink className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-white bg-gray-800' : 'text-black bg-gray-300'}`} to="/projects">Projects</NavLink>
-          <NavLink download="Connor McGrew Resume" className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-white bg-gray-800' : 'text-black bg-gray-300'}`} to="/resume">Resume</NavLink>
-          <NavLink className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-white bg-gray-800' : 'text-black bg-gray-300'}`} to="/contact">Contact</NavLink>
-          <NavLink className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-white bg-gray-800' : 'text-black bg-gray-300'}`} to="/">Home</NavLink>
+          <NavLink className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-zinc-200 bg-neutral-900' : 'text-black bg-zinc-200'} hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out`} to="/projects">Projects</NavLink>
+          <NavLink download="Connor McGrew Resume" className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-zinc-200 bg-neutral-900' : 'text-black bg-zinc-200'} hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out`} to="/resume">Resume</NavLink>
+          <NavLink className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-zinc-200 bg-neutral-900' : 'text-black bg-zinc-200'} hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out`} to="/contact">Contact</NavLink>
+          <NavLink className={`px-4 py-2 rounded-md ml-8 ${darkMode ? 'text-zinc-200 bg-neutral-900' : 'text-black bg-zinc-200'} hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out`} to="/">Home</NavLink>
         </li>
       </ul>
     </nav>
