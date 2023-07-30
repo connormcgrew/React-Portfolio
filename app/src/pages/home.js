@@ -1,13 +1,14 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
+import { DarkModeContext } from '../contexts/DarkModeContext';
 
 export default function Home() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div>
-       <main className='bg-white px-10'>
-        <section className= ' min-h-screen'>
-       
-          <div className='relative mx-auto overflow-hiddens mt-20 flex justify-center'>
+    <div className={` ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-300 text-black'}`}>
+      <main className='px-10'>
+        <section className='min-h-screen'>
+
+          <div className='relative mx-auto overflow-hiddens pt-10 flex justify-center'>
             <img src="/images/headshotphotoshop.png" alt="Picture of the author" className='rounded-full w-80 h-80 object-cover'/>
           </div>
           <div className='text-center p-10'>
@@ -18,10 +19,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-     
       </main>
     </div>
   );
 }
-
-
