@@ -14,6 +14,8 @@ const Contact = () => {
             If you have any questions or inquiries, feel free to contact me via my{" "}
             <a
               href="https://www.linkedin.com/in/connor-mcgrew-0b7118243/"
+              target="_blank"
+              rel="noreferrer"
               className={`${darkMode ? 'text-blue-700' : 'text-blue-700'} hover:text-blue-400 focus:text-blue-400 transition-colors duration-300 ease-in-out'}`}
             >
               LinkedIn

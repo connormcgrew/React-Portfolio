@@ -10,12 +10,16 @@ const Footer = () => {
       <div className={`text-5xl flex justify-center gap-5 py-3 ${darkMode ? 'text-zinc-200' : 'text-black'}`}>
         <a
           href="https://www.linkedin.com/in/connor-mcgrew-0b7118243/"
+          target="_blank"
+          rel="noreferrer" 
           className={`hover:text-blue-700 focus:text-blue-700 transition-colors duration-300 ease-in-out ${darkMode ? 'text-zinc-200' : 'text-black'}`}
         >
           <AiFillLinkedin />
         </a>
         <a
           href="https://github.com/connormcgrew"
+          target="_blank"
+          rel="noreferrer" 
           className={`hover:text-gray-800 focus:text-gray-800 transition-colors duration-300 ease-in-out ${darkMode ? 'text-zinc-200' : 'text-black'}`}
         >
           <AiFillGithub />
@@ -23,20 +27,24 @@ const Footer = () => {
       </div>
       <div className={`flex justify-center ${darkMode ? 'text-zinc-200' : 'text-black'}`}>
         <p>
-          Checkout my{" "}
+          Checkout my{' '}
           <a
             href="https://www.linkedin.com/in/connor-mcgrew-0b7118243/"
+            target="_blank"
+            rel="noreferrer" 
             className={`${darkMode ? 'text-blue-700' : 'text-blue-700'} hover:text-blue-400 focus:text-blue-400 transition-colors duration-300 ease-in-out'}`}
           >
             LinkedIn
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
             href="https://github.com/connormcgrew"
-            className={`${darkMode ? 'text-gray-800' : 'text-gray-800'} hover:text-gray-400 focus:text-gray-400 transition-colors duration-300 ease-in-out '}`}
+            target="_blank"
+            rel="noreferrer" 
+            className={`${darkMode ? 'text-gray-800' : 'text-gray-800'} hover:text-gray-400 focus:text-gray-400 transition-colors duration-300 ease-in-out'}`}
           >
             Github
-          </a>{" "}
+          </a>{' '}
           !
         </p>
       </div>
