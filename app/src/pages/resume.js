@@ -28,7 +28,7 @@ const Resume = () => {
             href="images/resume.pdf"
             className={`${
               darkMode ? 'bg-zinc-200 text-black' : 'bg-neutral-900 text-zinc-200'
-            } px-4 rounded-md ml-8 py-2 mb-12 hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out`}
+            } px-4 rounded-md py-2 mb-12 hover:bg-pink-500 hover:text-white focus:bg-pink-500 focus:text-white transition-colors duration-300 ease-in-out`}
           >
             Download my Resume!
           </a>
