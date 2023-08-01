@@ -14,6 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <div className='min-h-screen'>
       <DarkModeProvider>
       <Header />
       <Routes>
@@ -24,6 +25,7 @@ function App() {
       </Routes>
       <Footer />
       </DarkModeProvider>
+      </div>
     </BrowserRouter>
   );
 }

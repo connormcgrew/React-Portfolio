@@ -5,7 +5,7 @@ const Contact = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={`pt-10 px-4 min-h-screen ${darkMode ? 'bg-neutral-900 text-white' : 'bg-zinc-200 text-black'}`}>
+    <div className={`pt-10 px-4  ${darkMode ? 'bg-neutral-900 text-white' : 'bg-zinc-200 text-black'}`}>
       <h1 className="text-5xl font-bold mb-6 flex justify-center">Contact Me</h1>
       <div className="flex flex-col items-center">
         <div className={`max-w-md w-full shadow-md rounded-lg p-6 mb-6 ${darkMode ? 'bg-zinc-200 text-black' : 'bg-neutral-900 text-white'}`}>

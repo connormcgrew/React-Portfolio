@@ -6,7 +6,7 @@ const Footer = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <footer className={`py-5 ${darkMode ? 'bg-neutral-900 text-zinc-200' : 'bg-zinc-200 text-black'}`}>
+    <footer className={`py-5 sticky top-[100vh] ${darkMode ? 'bg-neutral-900 text-zinc-200' : 'bg-zinc-200 text-black'}`}>
       <div className={`text-5xl flex justify-center gap-5 py-3 ${darkMode ? 'text-zinc-200' : 'text-black'}`}>
         <a
           href="https://www.linkedin.com/in/connor-mcgrew-0b7118243/"
