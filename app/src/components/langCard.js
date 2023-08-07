@@ -30,7 +30,7 @@ const TechnologiesCard = ({ category }) => {
   return (
     <div className={`flex justify-center ${darkMode ? "dark" : "light"}`}>
       <div className=" w-[400px]">
-        <div className={`shadow-md rounded-lg p-6 lg:h-[250px] ${darkMode ? "light" : "dark"} py-2 mb-4`}>
+        <div className={`shadow-md rounded-lg p-6 lg:h-[300px] ${darkMode ? "light" : "dark"} py-2 mb-4`}>
           <h2 className={`text-xl font-semibold mb-2 ${darkMode ? "light" : "dark"}`}>{category}</h2>
           <ul className={`list-disc pl-6 ${darkMode ? "light" : "dark"}`}>
             {technologies.map((tech, index) => (
