@@ -46,6 +46,9 @@ const Header = () => {
         {showNav && (
           <ul className="flex flex-col mt-4">
             <li className='my-2'>
+              <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/">Home</NavLink>
+            </li>
+            <li className='my-2'>
               <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/projects">Projects</NavLink>
             </li>
             <li className='my-2'>
@@ -53,9 +56,6 @@ const Header = () => {
             </li>
             <li className='my-2'>
               <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/contact">Contact</NavLink>
-            </li>
-            <li className='my-2'>
-              <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/">Home</NavLink>
             </li>
           </ul>
         )}
