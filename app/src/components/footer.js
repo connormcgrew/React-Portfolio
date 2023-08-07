@@ -6,13 +6,13 @@ const Footer = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <footer className={`py-5 sticky top-[100vh] ${darkMode ? 'bg-neutral-900 text-zinc-200' : 'bg-zinc-200 text-black'}`}>
-      <div className={`text-5xl flex justify-center gap-5 py-3 ${darkMode ? 'text-zinc-200' : 'text-black'}`}>
+    <footer className={`py-5 sticky top-[100vh] ${darkMode ? 'dark' : 'light'}`}>
+      <div className={`text-5xl flex justify-center gap-5 py-3 ${darkMode ? 'dark' : 'light'}`}>
         <a
           href="https://www.linkedin.com/in/connor-mcgrew-0b7118243/"
           target="_blank"
           rel="noreferrer" 
-          className={`hover:text-blue-700 focus:text-blue-700 transition-colors duration-300 ease-in-out ${darkMode ? 'text-zinc-200' : 'text-black'}`}
+          className={`hover:text-blue-700 focus:text-blue-700 transition-colors duration-300 ease-in-out ${darkMode ? 'dark' : 'light'}`}
         >
           <AiFillLinkedin />
         </a>
@@ -20,12 +20,12 @@ const Footer = () => {
           href="https://github.com/connormcgrew"
           target="_blank"
           rel="noreferrer" 
-          className={`hover:text-gray-800 focus:text-gray-800 transition-colors duration-300 ease-in-out ${darkMode ? 'text-zinc-200' : 'text-black'}`}
+          className={`hover:text-gray-800 focus:text-gray-800 transition-colors duration-300 ease-in-out ${darkMode ? 'dark' : 'light'}`}
         >
           <AiFillGithub />
         </a>
       </div>
-      <div className={`flex justify-center ${darkMode ? 'text-zinc-200' : 'text-black'}`}>
+      <div className={`flex justify-center ${darkMode ? 'dark' : 'light'}`}>
         <p>
           Checkout my{' '}
           <a

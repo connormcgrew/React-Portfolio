@@ -4,9 +4,9 @@ import { DarkModeContext } from '../contexts/DarkModeContext';
 export default function Home() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={` ${darkMode ? 'bg-neutral-900 text-white' : 'bg-zinc-200 text-black'}`}>
+    <div className={` ${darkMode ? 'dark' : 'light'}`}>
       <main className='px-10'>
-        <section className='min-h-screen'>
+        <section >
 
           <div className='relative mx-auto overflow-hiddens pt-10 flex justify-center'>
             <img src="/images/headshotphotoshop.png" alt="Author's Headshot" className='rounded-full w-80 h-80 object-cover'/>
