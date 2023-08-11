@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home.js';
 import Projects from './pages/projects.js';
 import Header from './components/header.js';
@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className='min-h-screen'>
       <DarkModeProvider>
       <Header />
@@ -25,7 +25,7 @@ function App() {
       <Footer />
       </DarkModeProvider>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
