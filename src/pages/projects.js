@@ -96,13 +96,13 @@ const Projects = () => {
             link1: "https://damp-bastion-12792-5a703e3fd802.herokuapp.com/",
             link2: "https://github.com/connormcgrew/Text-Editor-PWA"
         },
-        // {
-        //     title: "Drill Sergeant (Group Project)",
-        //     description: "A full-stack application that allows the user to create, save, and delete workouts.",
-        //     imageSrc: "/images/drill-sergeant.png",
-        //     link1: "https://drill-sergeant.herokuapp.com/",
-        //     link2: "https://github.com/Evermuniz/Drill-Sergeant"
-        // },
+        {
+            title: "Drill Sergeant (Group Project)",
+            description: "Introducing 'Drill Sergeant' – the uncompromising fitness app that brings the intensity of a boot camp to your workouts. Get ready to transform your fitness journey with tough love motivation quotes that push you beyond your limits. Designed to cut through excuses, 'Drill Sergeant' ensures every workout counts, driving you to achieve your peak shape. Experience a new level of motivation, commitment, and results – because excuses have no place in your fitness success story.",
+            imageSrc: "/images/drill-sergeant.png",
+            link1: "https://drill-sergeant-dda0cd61e869.herokuapp.com/",
+            link2: "https://github.com/Evermuniz/Drill-Sergeant"
+        },
         
 
 
