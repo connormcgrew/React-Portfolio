@@ -13,7 +13,7 @@ export default function Home() {
           </div>
           <div className='text-center p-10'>
             <h2 className='text-6xl  mb-4 py-2'>Connor McGrew</h2>
-            <h3 className='text-2xl py-2'>Fullstack Developer and Student</h3>
+            <h3 className='text-2xl py-2'>Fullstack Developer and avid learner</h3>
             <p className='text-md py-5 leading-8'>
               I am a recent grauduate of the University of Utah Professional Education Bootcamps studying Full-Stack Development.
                I am located in Lehi and have 6 months of coding experience. 
