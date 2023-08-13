@@ -6,27 +6,6 @@ const Projects = () => {
 
     const projects = [
         {
-            title: "Random Password Generator",
-            description: "Discover the power of secure passwords with  advanced Random Password Generator. Craft personalized passwords effortlessly by tailoring their length, ranging from 8 to 128 characters. You're in control – select uppercase and lowercase letters, numbers, and even special characters to suit your security needs. Strengthen your digital fortress with ease.",
-            imageSrc: "/images/random-pass-gen.png",
-            link1: "https://connormcgrew.github.io/Random-password-generator/",
-            link2: "https://github.com/connormcgrew/Random-password-generator",
-        },
-        {
-            title: "Javascript Quiz",
-            description: "Test your knowledge of Javascript with this quiz. You will be presented with a series of questions and a timer will start. Answer the questions as quickly as possible. If you answer incorrectly, time will be subtracted from the clock. When all questions are answered or the timer reaches 0, the game is over. You will be able to save your score and view it on the high scores page.",
-            imageSrc: "/images/js-quiz.png",
-            link1: "https://connormcgrew.github.io/JavaScript-Quiz/",
-            link2: "https://github.com/connormcgrew/JavaScript-Quiz",
-        },
-        {
-            title: "Work Day Scheduler",
-            description: "Experience organized brilliance with a dynamic calendar app that lets you capture each moment. Imagine effortlessly saving events for every hour in a browser-based wonderland. This isn't just a calendar – it's a canvas where HTML, CSS, and jQuery dance. It's your time-traveling companion for a sparkling schedule. Embrace time management with this helpful tool!",
-            imageSrc: "/images/wd-scheduler.png",
-            link1: "https://connormcgrew.github.io/Work-Day-Scheduler/",
-            link2: "https://github.com/connormcgrew/Work-Day-Scheduler",
-        },
-        {
             title: "Weather Dashboard",
             description: "Step into a weather wonderland in your browser! This dashboard comes alive with real-time updates as HTML and CSS dynamically blend with the weather's rhythm. Using the OpenWeather API, it conjures city-specific weather data at your command. It's like having a personal meteorological crystal ball, all beautifully powered by jQuery. Weather forecasting meets digital artistry – get ready to experience weather in a whole new dimension!",
             imageSrc: "/images/weather-dash.png",
@@ -103,7 +82,7 @@ const Projects = () => {
             link1: "https://drill-sergeant-dda0cd61e869.herokuapp.com/",
             link2: "https://github.com/Evermuniz/Drill-Sergeant"
         },
-        
+
         
 
 
