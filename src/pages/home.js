@@ -15,7 +15,7 @@ export default function Home() {
             <h2 className='text-6xl  mb-4 py-2'>Connor McGrew</h2>
             <h3 className='text-2xl py-2'>Fullstack Developer</h3>
             <p className='text-md py-5 leading-8'>
-              I am a recent grauduate of the University of Utah Professional Education Bootcamps studying Full-Stack Development.
+              I am a recent graduate of the University of Utah Professional Education Bootcamps studying Full-Stack Development.
                I am located in Lehi and have 6 months of coding experience. 
                I am currently looking for a job in the field of Full-Stack Development, Front-End Developer, or Back-End Developer. 
                I am a hard worker and an avid learner.
