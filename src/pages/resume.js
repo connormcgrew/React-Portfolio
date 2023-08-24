@@ -9,6 +9,7 @@ const Resume = () => {
     <div className={` ${darkMode ? 'dark' : 'light '}`}>
       <h1 className="flex justify-center text-5xl pb-10 font-bold py-10">Resume</h1>
       <div className="flex flex-wrap">
+        {/* remove TechnologiesCards and just add a picture of my resume with a download button */}
         <div className="w-full lg:w-1/4 m-auto lg:mr-2">
           {/* Front-end technologies */}
           <TechnologiesCard category="Front-End" />
