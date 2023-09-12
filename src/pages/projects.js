@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { DarkModeContext } from "../contexts/DarkModeContext";
 
 const Projects = () => {
@@ -6,32 +7,32 @@ const Projects = () => {
 
     const projects = [
         {
+            title: "Drill Sergeant (Group Project)",
+            description: "Introducing 'Drill Sergeant' – the uncompromising fitness app that brings the intensity of a boot camp to your workouts. Get ready to transform your fitness journey with tough love motivation quotes that push you beyond your limits. Designed to cut through excuses, 'Drill Sergeant' ensures every workout counts, driving you to achieve your peak shape. Experience a new level of motivation, commitment, and results – because excuses have no place in your fitness success story.",
+            imageSrc: "/images/drill-sergeant.png",
+            link1: "https://drill-sergeant-dda0cd61e869.herokuapp.com/",
+            link2: "https://github.com/Evermuniz/Drill-Sergeant"
+        },
+        {
+            title: "Become (Group Project)",
+            description: "Unleash your potential with Become: an app that sparks inspiration through powerful quotes, guides you to set goals, and lets you encapsulate your dreams in time capsules for future reflection. This interactive full-stack marvel, powered by node.js, express.js, mysql, sequelize, handlebars.js, pico.css, and uiverse styling, redefines self-improvement, all in one dynamic journey of growth.",
+            imageSrc: "/images/become.png",
+            link1: "https://becomethebestyou.herokuapp.com/",
+            link2: "https://github.com/tylermifflin/Become",
+        },
+        {
+            title: "Social Network API",
+            description: "Step into the dynamic realm of social connections! Behold, an API entwined with MongoDB that empowers you to craft, refine, and transform users and thoughts. Forge bonds by adding friends, infuse your thoughts with reactions, and effortlessly sweep away both when the time is right. This isn't just code – it's your passport to curating a captivating social experience!",
+            imageSrc: "/images/social-api.png",
+            videoLink: "https://drive.google.com/file/d/15sBFDr2Ndlb7KBhMd3rQggovanGhH2Yd/view",
+            link2: "https://github.com/connormcgrew/Social-API",
+        },
+        {
             title: "Weather Dashboard",
             description: "Step into a weather wonderland in your browser! This dashboard comes alive with real-time updates as HTML and CSS dynamically blend with the weather's rhythm. Using the OpenWeather API, it conjures city-specific weather data at your command. It's like having a personal meteorological crystal ball, all beautifully powered by jQuery. Weather forecasting meets digital artistry – get ready to experience weather in a whole new dimension!",
             imageSrc: "/images/weather-dash.png",
             link1: "https://connormcgrew.github.io/Weather-Dashboard/",
             link2: "https://github.com/connormcgrew/Weather-Dashboard",
-        },
-        {
-            title: "Main Course (Group Project)",
-            description: "This dynamic application transforms into your personalized gateway, empowering you to swiftly explore stocks and dive into a multitude of news genres. The moment you land, a warm welcome graces the top, extending an invitation to either embark on a tailored stock search or embark on a journey through the most captivating 'top news' stories. Your adventure begins at the click of a button!",
-            imageSrc: "/images/main-course.png",
-            link1: "https://ericklea.github.io/main-course-home-page-project/",
-            link2: "https://github.com/ericklea/main-course-home-page-project",
-        },
-        {
-            title: "Professional Readme Generator",
-            description: "Empower your projects with a command-line wizardry that transforms your ideas into professional README.md files. Using the Inquirer package, it's like having a virtual scribe craft your project's narrative in the most captivating way possible. Let your creativity flow and watch as it turns into impressive READMEs that captivate and inform, all thanks to this enchanting tool!",
-            imageSrc: "/images/readme-gen.png",
-            videoLink: "https://drive.google.com/file/d/109NDqjbVmyF31aQIl3I0jy6GhWFAg8FC/view",
-            link2: "https://github.com/connormcgrew/Professional-readme-gen/blob/main/README.md",
-        },
-        {
-            title: "SVG Logo Generator",
-            description: "Ignite your creativity with a command-line enchantment that conjures simple SVG logos from your input. Your words become the brushstrokes that craft a logo uniquely yours. It's the magic touch for your brand identity, at your command. Set your imagination free and watch it shape into stunning visuals with this captivating tool!",
-            imageSrc: "/images/svg-logo-gen.png",
-            videoLink: "https://drive.google.com/file/d/1Ij4Vdz9-21WWyVo4h5KKfIdkxd4DjEZ0/view",
-            link2: "https://github.com/connormcgrew/SVG_logo_Gen",
         },
         {
             title: "Note Taker",
@@ -55,32 +56,11 @@ const Projects = () => {
             link2: "https://github.com/connormcgrew/E-commerce-backend",
         },
         {
-            title: "Become (Group Project)",
-            description: "Unleash your potential with Become: an app that sparks inspiration through powerful quotes, guides you to set goals, and lets you encapsulate your dreams in time capsules for future reflection. This interactive full-stack marvel, powered by node.js, express.js, mysql, sequelize, handlebars.js, pico.css, and uiverse styling, redefines self-improvement, all in one dynamic journey of growth.",
-            imageSrc: "/images/become.png",
-            link1: "https://becomethebestyou.herokuapp.com/",
-            link2: "https://github.com/tylermifflin/Become",
-        },
-        {
-            title: "Social Network API",
-            description: "Step into the dynamic realm of social connections! Behold, an API entwined with MongoDB that empowers you to craft, refine, and transform users and thoughts. Forge bonds by adding friends, infuse your thoughts with reactions, and effortlessly sweep away both when the time is right. This isn't just code – it's your passport to curating a captivating social experience!",
-            imageSrc: "/images/social-api.png",
-            videoLink: "https://drive.google.com/file/d/15sBFDr2Ndlb7KBhMd3rQggovanGhH2Yd/view",
-            link2: "https://github.com/connormcgrew/Social-API",
-        },
-        {
             title: "J.A.T.E Text Editor (PWA)",
             description: "Introducing your ultimate pocket of productivity! This ingenious app sets your notes and code snippets free from the shackles of unreliable internet connections, while also offering the ability to download the Chrome app. Seamlessly create and capture, knowing you can summon them whenever the need strikes. It's like having a trusty vault of inspiration and knowledge right at your fingertips, regardless of the digital tides!",
             imageSrc: "/images/text-editor.png",
             link1: "https://damp-bastion-12792-5a703e3fd802.herokuapp.com/",
             link2: "https://github.com/connormcgrew/Text-Editor-PWA"
-        },
-        {
-            title: "Drill Sergeant (Group Project)",
-            description: "Introducing 'Drill Sergeant' – the uncompromising fitness app that brings the intensity of a boot camp to your workouts. Get ready to transform your fitness journey with tough love motivation quotes that push you beyond your limits. Designed to cut through excuses, 'Drill Sergeant' ensures every workout counts, driving you to achieve your peak shape. Experience a new level of motivation, commitment, and results – because excuses have no place in your fitness success story.",
-            imageSrc: "/images/drill-sergeant.png",
-            link1: "https://drill-sergeant-dda0cd61e869.herokuapp.com/",
-            link2: "https://github.com/Evermuniz/Drill-Sergeant"
         },
 
         
@@ -90,6 +70,7 @@ const Projects = () => {
     ];
 
     return (
+        <section id="projects">
         <div className={` ${darkMode ? 'dark' : 'light '}`}>
             <h1 className="flex justify-center text-5xl pb-10 font-bold py-10">Projects</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -134,6 +115,12 @@ const Projects = () => {
                                     >
                                         Github repository
                                     </a>
+                                    <ScrollLink
+                                        to = "projects"
+                                        smooth={true}
+                                        duration={500}
+                                    >
+                                    </ScrollLink>
                                 </div>
                             </div>
                         </div>
@@ -141,6 +128,7 @@ const Projects = () => {
                 ))}
             </div>
         </div>
+        </section>
     );
 };
 

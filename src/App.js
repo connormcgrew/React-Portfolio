@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import Home from './pages/home.js';
 import Projects from './pages/projects.js';
 import Header from './components/header.js';
@@ -13,18 +13,14 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className='min-h-screen'>
       <DarkModeProvider>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
+      <Home />
+      <Projects />
+      <Resume />
+      <Contact />
       <Footer />
       </DarkModeProvider>
-      </div>
     </BrowserRouter>
   );
 }

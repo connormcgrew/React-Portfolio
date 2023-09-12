@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import { DarkModeContext } from '../contexts/DarkModeContext';
 
 const Contact = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={`pt-10 px-4  ${darkMode ? 'dark' : 'light'}`}>
+    <section id="contact">
+    <div className={`py-10 px-4  ${darkMode ? 'dark' : 'light'}`}>
       <h1 className="text-5xl font-bold mb-6 flex justify-center">Contact Me</h1>
       <div className="flex flex-col items-center">
         <div className={`max-w-md w-full shadow-md rounded-lg p-6 mb-6 ${darkMode ? 'light' : 'dark'}`}>
@@ -29,9 +31,16 @@ const Contact = () => {
             </a>
             ! I'll be happy to hear from you!
           </p>
+          <ScrollLink
+            to = "contact"
+            smooth={true}
+            duration={500}
+          >
+          </ScrollLink>
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

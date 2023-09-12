@@ -1,6 +1,6 @@
-import { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink from react-scroll
 import { DarkModeContext } from '../contexts/DarkModeContext';
 
 const Header = () => {
@@ -10,24 +10,37 @@ const Header = () => {
   return (
     <nav className={`py-10 flex justify-between items-center ${darkMode ? 'bg-gradient-to-r from-neutral-900 to-zinc-200 text-white' : 'bg-gradient-to-r from-zinc-200 to-neutral-900'}`}>
       <div className="flex items-center">
-        <NavLink to="/">
+        <ScrollLink to="home" smooth={true} duration={500}>
+          {/* Use ScrollLink instead of NavLink */}
           <h1 className={`text-xl ${darkMode ? 'dark' : 'light'} navhvr px-4 py-2 rounded-md ml-8`}>Connor McGrew</h1>
-        </NavLink>
+        </ScrollLink>
         <BsFillMoonStarsFill onClick={toggleDarkMode} className='cursor-pointer text-xl ml-4 ' />
       </div>
       <div className="hidden md:flex items-center">
         <ul className='flex mr-4'>
           <li className="ml-4">
-            <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/">Home</NavLink>
+            <ScrollLink to="home" smooth={true} duration={500}>
+              {/* Use ScrollLink instead of NavLink */}
+              <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Home</span>
+            </ScrollLink>
           </li>
           <li className="ml-4">
-            <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/projects">Projects</NavLink>
+            <ScrollLink to="projects" smooth={true} duration={500}>
+              {/* Use ScrollLink instead of NavLink */}
+              <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Projects</span>
+            </ScrollLink>
           </li>
           <li className="ml-4">
-            <NavLink download="Connor McGrew Resume" className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/resume">Resume</NavLink>
+            <ScrollLink to="resume" smooth={true} duration={500}>
+              {/* Use ScrollLink instead of NavLink */}
+              <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Resume</span>
+            </ScrollLink>
           </li>
           <li className="ml-4">
-            <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/contact">Contact</NavLink>
+            <ScrollLink to="contact" smooth={true} duration={500}>
+              {/* Use ScrollLink instead of NavLink */}
+              <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Contact</span>
+            </ScrollLink>
           </li>
         </ul>
       </div>
@@ -46,16 +59,28 @@ const Header = () => {
         {showNav && (
           <ul className="flex flex-col mt-4">
             <li className='my-2'>
-              <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/">Home</NavLink>
+              <ScrollLink to="home" smooth={true} duration={500}>
+                {/* Use ScrollLink instead of NavLink */}
+                <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Home</span>
+              </ScrollLink>
             </li>
             <li className='my-2'>
-              <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/projects">Projects</NavLink>
+              <ScrollLink to="projects" smooth={true} duration={500}>
+                {/* Use ScrollLink instead of NavLink */}
+                <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Projects</span>
+              </ScrollLink>
             </li>
             <li className='my-2'>
-              <NavLink download="Connor McGrew Resume" className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/resume">Resume</NavLink>
+              <ScrollLink to="resume" smooth={true} duration={500}>
+                {/* Use ScrollLink instead of NavLink */}
+                <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Resume</span>
+              </ScrollLink>
             </li>
             <li className='my-2'>
-              <NavLink className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`} to="/contact">Contact</NavLink>
+              <ScrollLink to="contact" smooth={true} duration={500}>
+                {/* Use ScrollLink instead of NavLink */}
+                <span className={`px-4 py-2 rounded-md ${darkMode ? 'dark' : 'light'} navhvr`}>Contact</span>
+              </ScrollLink>
             </li>
           </ul>
         )}
