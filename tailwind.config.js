@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ts : {
+          1: "#264942",
+        },
+    },
+  },
   },
   plugins: [
     require('tailwindcss'),

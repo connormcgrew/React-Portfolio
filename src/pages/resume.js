@@ -10,10 +10,10 @@ const Resume = () => {
       <div className="flex flex-wrap">
       </div>
       <div className="flex justify-center py-10">
-        <div className="max-w-2xl border border-gray-300 p-4 rounded-lg">
+        <div className={`max-w-4xl border p-4 rounded-lg ${darkMode ? 'light' : 'dark ' }`}>
           <div className="text-center">
             <img
-              src="images/resume.png"
+              src="images/Resumepng.png"
               alt="resume"
               className="w-full sm:w-auto md:w-auto lg:w-auto xl:w-auto"
             />
