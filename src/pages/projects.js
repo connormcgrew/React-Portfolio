@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { DarkModeContext } from "../contexts/DarkModeContext";
 
 const Projects = () => {
@@ -115,12 +114,6 @@ const Projects = () => {
                                     >
                                         Github repository
                                     </a>
-                                    <ScrollLink
-                                        to = "projects"
-                                        smooth={true}
-                                        duration={500}
-                                    >
-                                    </ScrollLink>
                                 </div>
                             </div>
                         </div>

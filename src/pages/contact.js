@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
 import { DarkModeContext } from '../contexts/DarkModeContext';
 
 const Contact = () => {
@@ -31,12 +30,6 @@ const Contact = () => {
             </a>
             ! I'll be happy to hear from you!
           </p>
-          <ScrollLink
-            to = "contact"
-            smooth={true}
-            duration={500}
-          >
-          </ScrollLink>
         </div>
       </div>
     </div>
@@ -45,3 +38,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+// look up youtube tutorial on how to create a working contact form

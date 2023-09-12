@@ -32,5 +32,5 @@ code {
 }
 
 .navhvr {
- @apply hover:bg-ts-1 transition-colors duration-300 ease-in-out
+ @apply hover:text-teal-500
 }

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link as ScrollLink } from "react-scroll";
 import { DarkModeContext } from "../contexts/DarkModeContext";
 
 const Resume = () => {
@@ -30,12 +29,6 @@ const Resume = () => {
             } px-4 rounded-md py-2 mb-12 navhvr`}>
           Download my Resume!
         </a>
-        <ScrollLink
-            to = "resume"
-            smooth={true}
-            duration={500}
-         >
-         </ScrollLink>
       </div>
     </div>
     </section>
