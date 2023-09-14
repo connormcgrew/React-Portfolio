@@ -36,3 +36,8 @@ const Resume = () => {
 };
 
 export default Resume;
+
+// move resume and download button to the left side of the page 
+// add a "software Skills" sections with icons for each skill?
+// add a currently learning section 
+

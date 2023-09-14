@@ -9,6 +9,9 @@ export default function Home() {
       <main className=''>
         <section id="about">
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center'>
+          <div className='relative mx-auto'>
+              <img src="/images/headshotphotoshop.png" alt="Author's Headshot" className='rounded-full w-80 object-cover'/>
+            </div>
             <div className='text-center p-10 col-span-2 md:col-span-1 lg:col-span-2'>
               <h2 className='text-5xl py-2 font-bold'>About Me</h2>
               <p className='text-md py-5 leading-8'>
@@ -23,9 +26,6 @@ export default function Home() {
                 </ul>
               </p>
             </div>
-            <div className='relative mx-auto'>
-              <img src="/images/headshotphotoshop.png" alt="Author's Headshot" className='rounded-full w-80 object-cover'/>
-            </div>
           </div>
         </section>
       </main>
@@ -35,6 +35,5 @@ export default function Home() {
 
 
 // AOS (animate on scroll)  library for scrolling animations
-// under About Me section, add a carousel of images of me
+// change headshot photo to also have a swiper of images of me
 // slideshow of interests/ hobbies? swiper or slick carousel
-// under headshot image, add paragraph of hobbies/interests
