@@ -71,58 +71,60 @@ const Projects = () => {
     return (
         <section id="projects">
         <div className={` ${darkMode ? 'dark' : 'light '}`}>
-            <h1 className="flex justify-center text-5xl pb-10 font-bold py-10">Projects</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {projects.map((project, index) => (
-                    <div key={index} className="relative p-4">
-                        <div className="relative">
-                            <img
-                                src={project.imageSrc}
-                                alt={project.title}
-                                className="w-full h-auto transition-transform transform scale-100 hover:scale-110"
-                            />
-                            <div className="overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-between p-4 text-white transition-opacity opacity-0 hover:opacity-100 overflow-auto">
-                                <div>
-                                    <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                                    <p className="text-sm">{project.description}</p>
-                                </div>
-                                <div className="text-center mt-2">
-                                    {project.videoLink ? (
-                                        <a
-                                            href={project.videoLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="block mainhvr mb-1"
-                                        >
-                                            Video demonstration
-                                        </a>
-                                    ) : (
-                                        <a
-                                            href={project.link1}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="block mainhvr mb-1"
-                                        >
-                                            Deployed application
-                                        </a>
-                                    )}
-                                    <a
-                                        href={project.link2}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="block mainhvr"
-                                    >
-                                        Github repository
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+          <h1 className="flex justify-center text-5xl pb-10 font-bold py-10">Projects</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {projects.map((project, index) => (
+              <div key={index} className="relative p-4 group">
+                <div className="relative">
+                  <img
+                    src={project.imageSrc}
+                    alt={project.title}
+                    className="w-full h-auto transition-transform transform scale-100 group-hover:scale-110"
+                  />
+                  <div className="overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 flex flex-col justify-between p-4 text-white transition-opacity opacity-0 group-hover:opacity-100 overflow-auto">
+                    <div>
+                      <p className="text-sm">{project.description}</p>
                     </div>
-                ))}
-            </div>
+                    <div className="text-center mt-2">
+                      {project.videoLink ? (
+                        <a
+                          href={project.videoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block mainhvr mb-1"
+                        >
+                          Video demonstration
+                        </a>
+                      ) : (
+                        <a
+                          href={project.link1}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block mainhvr mb-1"
+                        >
+                          Deployed application
+                        </a>
+                      )}
+                      <a
+                        href={project.link2}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block mainhvr"
+                      >
+                        Github repository
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-2 text-center">
+                  <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        </section>
+      </section>
     );
-};
+  };
 
 export default Projects;
