@@ -11,7 +11,7 @@ const Resume = () => {
       <div className="flex flex-wrap">
       </div>
       <div className="flex justify-center pb-10">
-        <div className={`max-w-3xl border p-4 rounded-lg ${darkMode ? 'light' : 'dark ' }`}>
+        <div className={`max-w-3xl`}>
           <div className="text-center">
             <img
               src="images/Resumepng.png"
