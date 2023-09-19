@@ -14,7 +14,7 @@ const Resume = () => {
         <div className={`max-w-3xl`}>
           <div className="text-center">
             <img
-              src="images/Resumepng.png"
+              src="images/Resume-ConnorMcGrew.png"
               alt="resume"
               className="w-full sm:w-auto md:w-auto lg:w-auto xl:w-auto"
             />
@@ -24,7 +24,7 @@ const Resume = () => {
       <div className="flex justify-center">
         <a
           download="Connor McGrew Resume"
-          href="images/resume.pdf"
+          href="images/Resume-ConnorMcGrew.pdf"
           className={`${darkMode ? 'light' : 'dark'
             } px-4 rounded-md py-2 mb-12 navhvr`}>
           Download my Resume!

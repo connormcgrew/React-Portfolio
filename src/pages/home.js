@@ -8,11 +8,11 @@ export default function Home() {
     <div className={` ${darkMode ? 'dark' : 'light'}`}>
       <main className=''>
         <section id="about">
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center'>
-          <div className='relative mx-auto'>
-              <img src="/images/headshotphotoshop.png" alt="Author's Headshot" className='rounded-full w-80 object-cover'/>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center'>
+          <div className='relative'>
+              <img src="/images/headshotphotoshop.png" alt="Author's Headshot" className='rounded-full w-80 mx-auto'/>
             </div>
-            <div className='text-center p-10 col-span-2 md:col-span-1 lg:col-span-2'>
+            <div className='text-center p-5 col-span-2 md:col-span-1 lg:col-span-2'>
               <h2 className='text-5xl py-2 font-bold'>About Me</h2>
               <p className='text-md py-5 leading-8'>
                 I am a graduate of the Full Stack Development Bootcamp at the University of Utah.
@@ -33,7 +33,7 @@ export default function Home() {
   );
 }
 
-
+// fix headhshot picture so it is displayed in the center on small screens, might need to switch to flexbox instead of grid
 // AOS (animate on scroll)  library for scrolling animations
 // change headshot photo to also have a swiper of images of me
 // slideshow of interests/ hobbies? swiper or slick carousel
