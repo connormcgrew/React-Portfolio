@@ -16,7 +16,7 @@ export default function Home() {
               <h2 className='text-5xl py-2 font-bold'>About Me</h2>
               <p className='text-md py-5 leading-8'>
                 I am a graduate of the Full Stack Development Bootcamp at the University of Utah.
-                With one year of coding experience, I am currently seeking a job in Full-Stack, Front-End, or Back-End Development.
+                With two years of coding experience, I am currently seeking a job in Full-Stack, Front-End, or Back-End Development.
                 <ul>
                   Some of my strengths include React.js, JavaScript, HTML, CSS, Node.js, Express.js, and Git.
                 </ul>
